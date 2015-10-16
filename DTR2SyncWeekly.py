@@ -54,7 +54,7 @@ def installCarWeekly():
 	os.system("xcopy /s /y /q \"BLSMOD\skins\" \"C:\Games\Infogrames\Dirt Track Racing 2\data\skins\"")
 	shutil.rmtree("BLSMOD")
 
-	os.system("cls")
+	os.system("cls")	
 def installTrackWeekly():
 	
 	print("*INSTALLING PPMS2014v2*")
@@ -104,6 +104,8 @@ def installTrackWeekly():
 		os.remove("Track_LASALLETACKY.zip")
 		os.system("xcopy /s /y /q \"LASALLETACKY\" \"C:\Games\Infogrames\Dirt Track Racing 2\data\\tracks\"")
 		shutil.rmtree("LASALLETACKY")
+
+	print("COULD NOT FIND TRACK 'BMS OSKALOOSA' ON VLR OR IFRT, SKIPPING.")
 	
 def quit():
 	print("Finished Operations! Happy Racing!")
